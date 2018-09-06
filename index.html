@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Index.CSS">
+</head>
+<body style="background: url(https://media.giphy.com/media/NWu3GljsOKiKA/giphy.gif); background-size: 100%">
+<button onclick="clickme()">Cookie</button>
+<span style="color:red"> <p id="cookies"></p><br><br> </span>
+<div>
+<button onclick="baker()"><p id="bakers"> </p></button><button onclick="godlybaker()"> <p id="godlybakers"> </button>
+</div><br><br>
+<div>
+<button onclick="clickinggloves();"> <p id="clickinggloves2"> </button>
+</div>
+<script>
+cookies = 0;
+cps = 0;
+bakers = 0;
+godlybakers = 0;
+clicker = 1;
+gloves = 0;
+document.getElementById("bakers").innerHTML = "Bakers (0) 15 cookies";
+document.getElementById("godlybakers").innerHTML = "GodlyBakers (0) 250 cookies";
+document.getElementById("clickinggloves2").innerHTML = "Clicking Gloves (0) 50 cookies";
+function clickme() {
+cookies += clicker;
+document.getElementById("cookies").innerHTML = cookies;
+}
+function baker() {
+if (cookies >= 15 + bakers) {
+cookies -= 15 + bakers;
+cps += 1;
+bakers +=1;
+bakercost = 15 + bakers;
+document.getElementById("cookies").innerHTML = cookies;
+document.getElementById("bakers").innerHTML = "Bakers (" + bakers + ")" + bakercost + " cookies";
+}
+}
+function clickinggloves() {
+if (cookies >= 50 + (gloves *2)) {
+cookies -= 50 + (gloves *2);
+gloves += 1;
+clicker +=1;
+glovescost = 50 + (clicker *2);
+document.getElementById("cookies").innerHTML = cookies;
+document.getElementById("clickinggloves2").innerHTML = "Clicking Gloves (" + gloves + ")" + glovescost + " cookies";
+}
+}
+function godlybaker() {
+if (cookies >= 250 + (godlybakers * 7)) {
+cookies -= 250 + (godlybakers * 7);
+cps += 5;
+godlybakers += 1;
+gbakercost = 250 + (godlybakers * 7);
+document.getElementById("cookies").innerHTML = cookies;
+document.getElementById("godlybakers").innerHTML = "GodlyBakers (" + godlybakers + ")" + gbakercost +" cookies";
+}
+}
+setInterval(function(){
+cookies += cps;
+document.getElementById("cookies").innerHTML = cookies;
+},1000);
+</script>
+<center> <p class="italic"> <strong> <font size="6"> <span style="color:red"> A normal Baker will make one cookie for you every secound!  <br> <br> A Godly Baker will make 7 cookies each secound! <br> <br> Clicking Gloves will give you 2 times more cookies on each click! (If you have 1 clicking glove you get 2 cookies) </span> </p> </strong> </font> </center>
+
+</body>
+</html>
