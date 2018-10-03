@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="verkefni2.CSS">
+</head>
+<div class="header"> </div>
+<div class="content"> </div>
+<body>
+
+	<h1 class="firstborder">
+		Box Modelið
+	</h1>
+<br> <br>
+	<h1 class="secoundborder">
+      <center> <br> <p class="border">
+      	<span style="color:red"> Box Model class </span>
+      </p></center>
+      <br>
+	</h1>
+	
+	<br> <br>
+
+	<h1 class="secoundborder">
+		<br>
+		
+			<span style="color:blue">
+				<p class="dotted">
+					 Box Model 2
+
+				</p> 
+
+			</span>
+			<br>
+		
+	</h1>
+
+		
+
+
+
+
+
+</body>
+</html>
