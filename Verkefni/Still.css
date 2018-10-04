@@ -1,0 +1,34 @@
+p.red {
+	color: red
+}
+p.blue {
+	color: blue
+}
+
+p.aðalfyrirsögn{
+
+	font-variant: small-caps;
+	color: blue;
+	font-size: 40px;	
+}
+p.undirfyrirsögn{
+	font-style: bold;
+	color: darkred;
+	font-size: 27px;
+}
+p.medium{
+	font-style: bold;
+
+     font-size: 20px;
+
+}
+p.small{
+	font-size: 15px;
+}
+p.tiny{
+	font-size: 10px;
+}
+div.elvis{
+	font-size: 25px;
+	color: red;
+}
