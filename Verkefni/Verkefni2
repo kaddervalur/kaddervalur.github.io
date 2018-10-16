@@ -4,6 +4,8 @@
 	
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="verkefni2.css">
+	<link rel="stylesheet" type="text/css" href="index.html">
+	
 </head>
 <div class="header"> </div>
 <div class="content"> </div>
