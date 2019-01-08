@@ -14,55 +14,55 @@
 <button onclick="clickinggloves();"> <p id="clickinggloves2"> </button>
 </div>
 <script>
-cookies = 0;
+money = 0;
 cps = 0;
 bakers = 0;
 godlybakers = 0;
 clicker = 1;
 gloves = 0;
-document.getElementById("bakers").innerHTML = "Bakers (0) 15 cookies";
-document.getElementById("godlybakers").innerHTML = "GodlyBakers (0) 250 cookies";
-document.getElementById("clickinggloves2").innerHTML = "Clicking Gloves (0) 50 cookies";
+document.getElementById("bakers").innerHTML = "Bakers (0) 15 money";
+document.getElementById("godlybakers").innerHTML = "GodlyBakers (0) 250 money";
+document.getElementById("clickinggloves2").innerHTML = "Clicking Gloves (0) 50 money";
 function clickme() {
-cookies += clicker;
-document.getElementById("cookies").innerHTML = cookies;
+money += clicker;
+document.getElementById("cookies").innerHTML = money;
 }
 function baker() {
-if (cookies >= 15 + bakers) {
-cookies -= 15 + bakers;
+if (money >= 15 + bakers) {
+money -= 15 + bakers;
 cps += 1;
 bakers +=1;
 bakercost = 15 + bakers;
-document.getElementById("cookies").innerHTML = cookies;
-document.getElementById("bakers").innerHTML = "Bakers (" + bakers + ")" + bakercost + " cookies";
+document.getElementById("cookies").innerHTML = money;
+document.getElementById("bakers").innerHTML = "Bakers (" + bakers + ")" + bakercost + " money";
 }
 }
 function clickinggloves() {
-if (cookies >= 50 + (gloves *2)) {
-cookies -= 50 + (gloves *2);
+if (money >= 50 + (gloves *2)) {
+money -= 50 + (gloves *2);
 gloves += 1;
 clicker +=1;
-glovescost = 50 + (clicker *2);
-document.getElementById("cookies").innerHTML = cookies;
-document.getElementById("clickinggloves2").innerHTML = "Clicking Gloves (" + gloves + ")" + glovescost + " cookies";
+glovescost = 50 + (money *2);
+document.getElementById("cookies").innerHTML = money;
+document.getElementById("clickinggloves2").innerHTML = "Clicking Gloves (" + gloves + ")" + glovescost + " money";
 }
 }
 function godlybaker() {
-if (cookies >= 250 + (godlybakers * 7)) {
-cookies -= 250 + (godlybakers * 7);
+if (money >= 250 + (godlybakers * 7)) {
+money -= 250 + (godlybakers * 7);
 cps += 5;
 godlybakers += 1;
 gbakercost = 250 + (godlybakers * 7);
-document.getElementById("cookies").innerHTML = cookies;
-document.getElementById("godlybakers").innerHTML = "GodlyBakers (" + godlybakers + ")" + gbakercost +" cookies";
+document.getElementById("cookies").innerHTML = money;
+document.getElementById("godlybakers").innerHTML = "GodlyBakers (" + godlybakers + ")" + gbakercost +" money";
 }
 }
 setInterval(function(){
-cookies += cps;
-document.getElementById("cookies").innerHTML = cookies;
+money += cps;
+document.getElementById("cookies").innerHTML = money;
 },1000);
 </script>
-<center> <p class="italic"> <strong> <font size="6"> <span style="color:red"> A normal Baker will make one cookie for you every secound!  <br> <br> A Godly Baker will make 7 cookies each secound! <br> <br> Clicking Gloves will give you 2 times more cookies on each click! (If you have 1 clicking glove you get 2 cookies) </span> </p> </strong> </font> </center>
+<center> <p class="italic"> <strong> <font size="6"> <span style="color:red"> A normal Baker will make one money for you every secound!  <br> <br> A Godly Baker will make 7 money each secound! <br> <br> Clicking Gloves will give you 2 times more money on each click! (If you have 1 clicking glove you get 2 money) </span> </p> </strong> </font> </center>
 
 </body>
 </html>
