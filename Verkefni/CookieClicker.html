@@ -48,11 +48,11 @@ document.getElementById("clickinggloves2").innerHTML = "Clicking Gloves (" + glo
 }
 }
 function godlybaker() {
-if (money >= 250 + (godlybakers * 7)) {
-money -= 250 + (godlybakers * 7);
+if (money >= 250 + (godlybakers * 10)) {
+money -= 250 + (godlybakers * 10);
 cps += 5;
 godlybakers += 1;
-gbakercost = 250 + (godlybakers * 7);
+gbakercost = 250 + (godlybakers * 10);
 document.getElementById("cookies").innerHTML = money;
 document.getElementById("godlybakers").innerHTML = "GodlyBakers (" + godlybakers + ")" + gbakercost +" money";
 }
@@ -62,7 +62,7 @@ money += cps;
 document.getElementById("cookies").innerHTML = money;
 },1000);
 </script>
-<center> <p class="italic"> <strong> <font size="6"> <span style="color:red"> A normal Baker will make one money for you every secound!  <br> <br> A Godly Baker will make 7 money each secound! <br> <br> Clicking Gloves will give you 2 times more money on each click! (If you have 1 clicking glove you get 2 money) </span> </p> </strong> </font> </center>
+<center> <p class="italic"> <strong> <font size="6"> <span style="color:red"> A normal Baker will make one money for you every secound!  <br> <br> A Godly Baker will make 10 money each secound! <br> <br> Clicking Gloves will give you 2 times more money on each click! (If you have 1 clicking glove you get 2 money) </span> </p> </strong> </font> </center>
 
 </body>
 </html>
