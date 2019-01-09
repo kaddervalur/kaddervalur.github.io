@@ -30,8 +30,8 @@ document.getElementById("cookies").innerHTML = money;
 function baker() {
 if (money >= 15 + bakers) {
 money -= 15 + bakers;
-cps += 1;
-bakers +=5;
+cps += 5;
+bakers +=1;
 bakercost = 15 + bakers;
 document.getElementById("cookies").innerHTML = money;
 document.getElementById("bakers").innerHTML = "Bakers (" + bakers + ")" + bakercost + " money";
