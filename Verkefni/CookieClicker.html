@@ -52,7 +52,7 @@ if (money >= 250 + (godlybakers * 10)) {
 money -= 250 + (godlybakers * 10);
 cps += 5;
 godlybakers += 1;
-gbakercost = 250 + (godlybakers * 10);
+gbakercost = 250 + (godlybakers * 50);
 document.getElementById("cookies").innerHTML = money;
 document.getElementById("godlybakers").innerHTML = "GodlyBakers (" + godlybakers + ")" + gbakercost +" money";
 }
