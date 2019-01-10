@@ -16,11 +16,11 @@
 <script>
 money = 0;
 cps = 0;
-usedprinter = 0;
+baker = 0;
 godlybakers = 0;
 clicker = 1;
 gloves = 0;
-document.getElementById("usedprinter").innerHTML = "usedprinter (0) 15 money";
+document.getElementById("baker").innerHTML = "baker (0) 15 money";
 document.getElementById("godlybakers").innerHTML = "GodlyBakers (0) 250 money";
 document.getElementById("clickinggloves2").innerHTML = "Clicking Gloves (0) 50 money";
 function clickme() {
@@ -28,13 +28,13 @@ money += clicker;
 document.getElementById("cookie").innerHTML = money;
 }
 function usedprinter() {
-if (money >= 15 + usedprinter) {
-money -= 15 + usedprinter;
+if (money >= 15 + baker) {
+money -= 15 + baker;
 cps += 5;
-usedprinter +=5;
-bakercost = 15 + usedprinter;
+baker +=5;
+bakercost = 15 + baker;
 document.getElementById("cookies").innerHTML = money;
-document.getElementById("usedprinter").innerHTML = "usedprinter (" + usedprinter + ")" + bakercost + " money";
+document.getElementById("usedprinter").innerHTML = "usedprinter (" + baker + ")" + bakercost + " money";
 }
 }
 function clickinggloves() {
