@@ -8,7 +8,7 @@
 <button onclick="clickme()">Money :v</button>
 <span style="color:red"> <p id="cookies"></p><br><br> </span>
 <div>
-<button onclick="baker()">Used Printer<p id="bakers"> </p></button><button onclick="godlybaker()"> <p id="godlybakers"> </button>
+<button onclick="baker()"><p id="bakers"> </p></button><button onclick="godlybaker()"> <p id="godlybakers"> </button>
 </div><br><br>
 <div>
 <button onclick="clickinggloves();"> <p id="clickinggloves2"> </button>
@@ -16,25 +16,25 @@
 <script>
 money = 0;
 cps = 0;
-baker = 0;
+bakers = 0;
 godlybakers = 0;
 clicker = 1;
 gloves = 0;
-document.getElementById("baker").innerHTML = "baker (0) 15 money";
+document.getElementById("bakers").innerHTML = "Bakers (0) 15 money";
 document.getElementById("godlybakers").innerHTML = "GodlyBakers (0) 250 money";
 document.getElementById("clickinggloves2").innerHTML = "Clicking Gloves (0) 50 money";
 function clickme() {
 money += clicker;
-document.getElementById("cookie").innerHTML = money;
-}
-function usedprinter() {
-if (money >= 15 + baker) {
-money -= 15 + baker;
-cps += 5;
-baker +=5;
-bakercost = 15 + baker;
 document.getElementById("cookies").innerHTML = money;
-document.getElementById("usedprinter").innerHTML = "usedprinter (" + baker + ")" + bakercost + " money";
+}
+function baker() {
+if (money >= 15 + bakers) {
+money -= 15 + bakers;
+cps += 5;
+bakers +=5;
+bakercost = 15 + bakers;
+document.getElementById("cookies").innerHTML = money;
+document.getElementById("bakers").innerHTML = "Bakers (" + bakers + ")" + bakercost + " money";
 }
 }
 function clickinggloves() {
@@ -62,7 +62,7 @@ money += cps;
 document.getElementById("cookies").innerHTML = money;
 },1000);
 </script>
-<center> <p class="italic"> <strong> <font size="6"> <span style="color:red"> A used printer will make you money every second!  <br> <br> A Godly Baker will make 10 money each secound! <br> <br> Clicking Gloves will give you 2 times more money on each click! (If you have 1 clicking glove you get 2 money) </span> </p> </strong> </font> </center>
+<center> <p class="italic"> <strong> <font size="6"> <span style="color:red"> A normal Baker will make one money for you every secound!  <br> <br> A Godly Baker will make 10 money each secound! <br> <br> Clicking Gloves will give you 2 times more money on each click! (If you have 1 clicking glove you get 2 money) </span> </p> </strong> </font> </center>
 
 </body>
 </html>
